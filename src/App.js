@@ -12,6 +12,9 @@ function App() {
         <p>
           Deze tekst heb ik via mijn laptop op de site gezet.
         </p>
+        <p>
+          En dit is weer toegevoegd aan app op mijn PC.
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
