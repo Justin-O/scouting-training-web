@@ -13,7 +13,7 @@ function App() {
     <> 
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container-fluid justify-content-start">
-          <a href="/modules" className="navbar-brand">
+          <a href="/" className="navbar-brand">
             Scouting Academy
           </a>
           <div className="navbar-nav mr-auto">
@@ -33,6 +33,7 @@ function App() {
 
       <div className="container-fluid">
         <Routes>
+          <Route path="/" element={<Modules />} />
           <Route path="modules" element={<Modules />} />
           <Route path="badges" element={<Badges />} />
         </Routes>
