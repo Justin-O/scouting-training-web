@@ -24,7 +24,7 @@ function ModuleBadges() {
                 <button className='btn btn-primary module-badge badge-inactive'>Badge 1</button>
             </Link>
         </div>
-    )
-}
+    );
+};
 
-export default ModuleBadges
+export default ModuleBadges;
