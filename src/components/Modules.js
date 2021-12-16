@@ -1,51 +1,68 @@
 import React from 'react';
 import '../assets/css/modules.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from 'react-router-dom';
+import ModuleComponent from './ModuleComponent';
+import ModuleComponentInvert from './ModuleComponentInvert';
 
 function Modules() {
     return (
-        <>
-            <div className='row mt-5'>
-                <div className='col border g-0'>
-                    <div className='d-flex justify-content-end'>
-                        <Link to="/badges" className='link-d'>
-                            <div className='module-button d-flex justify-content-between'>
-                                <div className='module-badge d-flex justify-content-center align-items-center align-self-center ms-4'>Badge</div>
-                                <div className='module-info'>
-                                    <h4 className='title'>Spelvisie & spelaanbod</h4>
-                                    <p className='info'>Hier komt de omschrijving ervan dsdkfjhs kjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhss kjfhsef kjhseef kjhsef kjhsseffikihjawdoijna doijs foiajwd ijs.</p>
-                                </div>
-                                <div className='module-number-outer d-flex justify-content-center align-items-center align-self-center'>
-                                    <div className='module-number-inner d-flex justify-content-center align-items-center'>1</div>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
-                <div className='col border g-0'></div>
-            </div>
+        <div className='my-5'>
+            <ModuleComponent
+                title={"Spelvisie & spelaanbod"}
+                number={"1"}
+            />
 
-            <div className='row'>
-                <div className='col border g-0'></div>
-                <div className='col border g-0'>
-                    <div className='d-flex justify-content-start'>
-                        <Link to="/badges" className='link-d'>
-                            <div className='module-button d-flex justify-content-between'>
-                                <div className='module-number-outer d-flex justify-content-center align-items-center align-self-center'>
-                                    <div className='module-number-inner d-flex justify-content-center align-items-center'>2</div>
-                                </div>
-                                <div className='module-info'>
-                                    <h4 className='title'>Scouting in de samenleving</h4>
-                                    <p className='info'>Hier komt de omschrijving ervan dsdkfjhs kjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhsskjfhsef kjhseef kjhsef kjhss kjfhsef kjhseef kjhsef kjhsseffikihjawdoijna doijs foiajwd ijs.</p>
-                                </div>
-                                <div className='module-badge d-flex justify-content-center align-items-center align-self-center me-4'>Badge</div>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </>
+            <ModuleComponentInvert
+                title={"Scouting in de samenleving"}
+                number={"2"}
+            />
+
+            <ModuleComponent
+                title={"Scouting academy"}
+                number={"3"}
+            />
+
+            <ModuleComponentInvert
+                title={"Leeftijdseigen kenmerken"}
+                number={"4"}
+            />
+            <ModuleComponent
+                title={"Activiteitenwensen & spelideeën"}
+                number={"5"}
+            />
+
+            <ModuleComponentInvert
+                title={"Programmeren"}
+                number={"6"}
+            />
+            <ModuleComponent
+                title={"Motivatietechnieken & groepsproces"}
+                number={"7"}
+            />
+
+            <ModuleComponentInvert
+                title={"Veiligheid"}
+                number={"8"}
+            />
+            <ModuleComponent
+                title={"Presenteren & uitleggen van activiteiten"}
+                number={"9"}
+            />
+
+            <ModuleComponentInvert
+                title={"Gewenst gedrag"}
+                number={"10"}
+            />
+            <ModuleComponent
+                title={"Evalueren van activiteiten"}
+                number={"11"}
+            />
+
+            <ModuleComponentInvert
+                title={"Gespreks- & overlegvaardigheden"}
+                number={"12"}
+            />
+        </div>
     );
 };
 
