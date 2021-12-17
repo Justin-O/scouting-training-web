@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Modules from './components/Modules';
 import Badges from './components/Badges';
+import ModulesTest from './components/ModulesTest';
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
 
       <div className="container-fluid">
         <Routes>
-          <Route path="/" element={<Modules />} />
+          <Route path="/" element={<ModulesTest />} />
           <Route path="modules" element={<Modules />} />
           <Route path="badges" element={<Badges />} />
         </Routes>

@@ -3,6 +3,7 @@ import '../assets/css/modules.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
 import ProgressBarLeft from '../assets/img/progressbar-left.svg';
+import Cheat from '../assets/img/cheat.png';
 
 function ModuleComponent(props) {
     return (

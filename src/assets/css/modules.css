@@ -58,3 +58,19 @@
     font-size: 3rem;
     color: #7849B4;
 }
+
+.bar-l {
+    position: relative;
+    margin-top: 80px;
+    right: 15px;
+}
+
+.bar-r {
+    position: relative;
+    margin-top: 80px;
+    left: 15px;
+}
+
+.ontop {
+    z-index: 99;
+}
