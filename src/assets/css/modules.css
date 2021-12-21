@@ -5,58 +5,35 @@
 
 .module-button {
     width: 530px;
-    height: 120px;
+    height: 116px;
+
+    margin: 0 60px;
 
     background: #DEDEDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 73px;
 }
 
-.module-badge {
-    width: 70px;
-    height: 70px;
-
-    background: #7648B1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 70px;
-}
-
 .module-info {
-    width: 250px;    
-    padding: 1rem 0;
-
+    width: 400px;
     text-align: center;
-    
+    padding: 0 25px;
 }
 
 .module-info .title {
-    font-size: 1rem;    
-}
+    font-family: "Roboto";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: bold;
 
-.module-info .info {
-    font-size: .75rem;
-    overflow: hidden;
+    color: #323232;
 }
 
 .module-number-outer {
     width: 125px;
     height: 125px;
-
-    background: #7849B4;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 125px;
-}
-
-.module-number-inner {
-    width: 100px;
-    height: 100px;
-
-    background: #F7F7F7;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
-
-    font-size: 3rem;
-    color: #7849B4;
 }
 
 .bar-l {

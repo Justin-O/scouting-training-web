@@ -9,58 +9,62 @@ function Modules() {
         <div className='my-5'>
             <ModuleComponent
                 title={"Spelvisie & spelaanbod"}
-                number={"1"}
+                progress={100}
             />
 
             <ModuleComponentInvert
                 title={"Scouting in de samenleving"}
-                number={"2"}
+                progress={90}
             />
 
             <ModuleComponent
                 title={"Scouting academy"}
-                number={"3"}
+                progress={100}
             />
 
             <ModuleComponentInvert
                 title={"Leeftijdseigen kenmerken"}
-                number={"4"}
+                progress={100}
             />
+
             <ModuleComponent
                 title={"Activiteitenwensen & spelideeën"}
-                number={"5"}
+                progress={75}
             />
 
             <ModuleComponentInvert
                 title={"Programmeren"}
-                number={"6"}
+                progress={20}
             />
+
             <ModuleComponent
                 title={"Motivatietechnieken & groepsproces"}
-                number={"7"}
+                progress={33}
             />
 
             <ModuleComponentInvert
                 title={"Veiligheid"}
-                number={"8"}
+                progress={5}
             />
+
             <ModuleComponent
                 title={"Presenteren & uitleggen van activiteiten"}
-                number={"9"}
+                progress={100}
             />
 
             <ModuleComponentInvert
                 title={"Gewenst gedrag"}
-                number={"10"}
+                progress={90}
             />
+            
             <ModuleComponent
                 title={"Evalueren van activiteiten"}
-                number={"11"}
+                progress={80}
             />
 
             <ModuleComponentInvert
                 title={"Gespreks- & overlegvaardigheden"}
-                number={"12"}
+                progress={100}
             />
         </div>
     );
