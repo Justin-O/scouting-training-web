@@ -1,0 +1,22 @@
+.component-padding {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+.navigation {
+    background-color: #687100;
+}
+
+.nav-link {
+    margin: 0 0.75rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* .navbar-dark .navbar-nav .nav-link.active {
+    background-color: #4A007F;
+    border-radius: 40px;
+    padding: 0.5rem 1.5rem;
+} */

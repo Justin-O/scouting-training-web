@@ -10,9 +10,9 @@ import BadgeGrey from '../assets/img/badge-grey.svg';
 function ModuleComponent(props) {
     
     const progress = props.progress;
-
     let badgeLoader;
     let backgroundLoader;
+
     if (progress === 100) {
         badgeLoader = Badge
         backgroundLoader = '#4A007F'
@@ -22,17 +22,26 @@ function ModuleComponent(props) {
     }
 
     
+    const  moduleColor = props.color;
+    let moduleButtonStyle;
+
+    if (moduleColor === "green") {
+        moduleButtonStyle = 'module-button green d-flex justify-content-end'
+    } else {
+        moduleButtonStyle = 'module-button yellow d-flex justify-content-end'
+    }
+
     return (
         <>
-            <div className='row'>
-                <div className='col border g-0'>
+            <div className='row g-0'>
+                <div className='col g-0'>
                     <div className='d-flex justify-content-end'>
-                        <Link to="/badges" className='link-d'>
-                            <div className='module-button d-flex justify-content-end'>
+                        <Link to="/voortgang" className='link-d'>
+                            <div className={moduleButtonStyle}>
                                 <div className='module-info d-flex justify-content-center align-items-center'>
                                     <h4 className='title'>{props.title}</h4>
                                 </div>
-                                <div className='module-number-outer d-flex justify-content-center align-items-center align-self-center'>
+                                <div className='progress-container d-flex justify-content-center align-items-center align-self-center'>
                                     <CircularProgressbarWithChildren
                                         value={progress}
                                         background={true}
@@ -50,7 +59,7 @@ function ModuleComponent(props) {
                         </Link>
                     </div>
                 </div>
-                <div className='col border g-0'></div>
+                <div className='col g-0'></div>
             </div>
         </>
     )

@@ -6,65 +6,77 @@ import ModuleComponentInvert from './ModuleComponentInvert';
 
 function Modules() {
     return (
-        <div className='my-5'>
+        <div className='component-padding modules-container'>
             <ModuleComponent
                 title={"Spelvisie & spelaanbod"}
                 progress={100}
+                color={"green"}
             />
 
             <ModuleComponentInvert
                 title={"Scouting in de samenleving"}
                 progress={90}
+                color={"yellow"}
             />
 
             <ModuleComponent
                 title={"Scouting academy"}
                 progress={100}
+                color={"yellow"}
             />
 
             <ModuleComponentInvert
                 title={"Leeftijdseigen kenmerken"}
                 progress={100}
+                color={"green"}
             />
 
             <ModuleComponent
                 title={"Activiteitenwensen & spelideeën"}
                 progress={75}
+                color={"green"}
             />
 
             <ModuleComponentInvert
                 title={"Programmeren"}
                 progress={20}
+                color={"yellow"}
             />
 
             <ModuleComponent
                 title={"Motivatietechnieken & groepsproces"}
                 progress={33}
+                color={"yellow"}
             />
 
             <ModuleComponentInvert
                 title={"Veiligheid"}
                 progress={5}
+                color={"green"}
             />
 
             <ModuleComponent
                 title={"Presenteren & uitleggen van activiteiten"}
                 progress={100}
+                color={"green"}
             />
 
             <ModuleComponentInvert
                 title={"Gewenst gedrag"}
                 progress={90}
+                color={"yellow"}
             />
-            
+
             <ModuleComponent
                 title={"Evalueren van activiteiten"}
                 progress={80}
+                color={"yellow"}
             />
 
             <ModuleComponentInvert
                 title={"Gespreks- & overlegvaardigheden"}
                 progress={100}
+                color={"green"}
             />
         </div>
     );
