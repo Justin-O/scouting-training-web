@@ -10,9 +10,9 @@ import BadgeGrey from '../assets/img/badge-grey.svg';
 function ModuleComponentInvert(props) {
     
     const progress = props.progress;
-
     let badgeLoader;
     let backgroundLoader;
+
     if (progress === 100) {
         badgeLoader = Badge
         backgroundLoader = '#4A007F'
@@ -20,16 +20,26 @@ function ModuleComponentInvert(props) {
         badgeLoader = BadgeGrey
         backgroundLoader = '#EFE9DA'
     }
+
+
+    const  moduleColor = props.color;
+    let moduleButtonStyle;
+
+    if (moduleColor === "green") {
+        moduleButtonStyle = 'module-button green d-flex justify-content-start'
+    } else {
+        moduleButtonStyle = 'module-button yellow d-flex justify-content-start'
+    }
     
     return (
         <>
-            <div className='row'>
-                <div className='col border g-0'></div>
-                <div className='col border g-0'>
+            <div className='row g-0'>
+                <div className='col g-0'></div>
+                <div className='col g-0'>
                     <div className='d-flex justify-content-start'>
-                        <Link to="/badges" className='link-d'>
-                            <div className='module-button d-flex justify-content-start'>
-                                <div className='module-number-outer d-flex justify-content-center align-items-center align-self-center'>
+                        <Link to="/voortgang" className='link-d'>
+                            <div className={moduleButtonStyle}>
+                                <div className='progress-container d-flex justify-content-center align-items-center align-self-center'>
                                     <CircularProgressbarWithChildren
                                         value={progress}
                                         background={true}

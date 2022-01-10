@@ -1,42 +1,54 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  Link,
   Routes,
-  Route
+  Route,
+  NavLink
 } from "react-router-dom";
 import Modules from './components/Modules';
-import Badges from './components/Badges';
-import ModulesTest from './components/ModulesTest';
+import ProgressPage from './components/ProgressPage';
+import FriendsPage from './components/FriendsPage';
+import ProfilePage from './components/ProfilePage';
 
 function App() {
   return (
     <> 
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container-fluid justify-content-start">
+      <nav className="navigation navbar fixed-top navbar-expand navbar-dark">
+        <div className="container my-3">
           <a href="/" className="navbar-brand">
-            Scouting Academy
+            Scouting Academy+
           </a>
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link to="/modules" className="nav-link">
+              <NavLink to="/" className="nav-link">
                 Modules
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/badges" className="nav-link">
-                Badges
-              </Link>
+              <NavLink to="/voortgang" className="nav-link">
+                Voortgang
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/vrienden" className="nav-link">
+                Vrienden
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/profiel" className="nav-link">
+                Profiel
+              </NavLink>
             </li>
           </div>
         </div>
       </nav>
 
-      <div className="container-fluid">
+      <div className="container-fluid p-0">
         <Routes>
-          <Route path="/" element={<ModulesTest />} />
-          <Route path="modules" element={<Modules />} />
-          <Route path="badges" element={<Badges />} />
+          <Route path="/" element={<Modules />} />
+          <Route path="voortgang" element={<ProgressPage />} />
+          <Route path="vrienden" element={<FriendsPage />} />
+          <Route path="profiel" element={<ProfilePage />} />
         </Routes>
       </div>
     </>
