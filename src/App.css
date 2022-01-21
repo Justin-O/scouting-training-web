@@ -1,3 +1,11 @@
+html {
+    /* background-color: #F3F0E9; */
+}
+
+.page-padding {
+    padding: 4rem;
+}
+
 .component-padding {
     padding-top: 10rem;
     padding-bottom: 3rem;
@@ -15,8 +23,12 @@
     text-decoration: underline;
 }
 
-/* .navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link.active {
     background-color: #4A007F;
     border-radius: 40px;
     padding: 0.5rem 1.5rem;
-} */
+}
+
+.vh100 {
+    height: 100vh;
+}

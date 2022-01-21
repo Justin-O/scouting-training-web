@@ -5,10 +5,14 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-import Modules from './components/Modules';
+import HomeRoadmapPage from './components/HomeRoadmapPage';
 import ProgressPage from './components/ProgressPage';
 import FriendsPage from './components/FriendsPage';
 import ProfilePage from './components/ProfilePage';
+import ModulePage from './components/ModulePage';
+import WorkInProgressPage from './components/WorkInProgressPage';
+import ModuleSectionPage from './components/ModuleSectionPage';
+import AddMethodpage from './components/AddMethodpage';
 
 function App() {
   return (
@@ -45,10 +49,14 @@ function App() {
 
       <div className="container-fluid p-0">
         <Routes>
-          <Route path="/" element={<Modules />} />
+          <Route path="/" element={<HomeRoadmapPage />} />
+          <Route path="module" element={<ModulePage />} />
+          <Route path="modulesection" element={<ModuleSectionPage />} />
+          <Route path="add-method" element={<AddMethodpage />} />
           <Route path="voortgang" element={<ProgressPage />} />
           <Route path="vrienden" element={<FriendsPage />} />
           <Route path="profiel" element={<ProfilePage />} />
+          <Route path="wip" element={<WorkInProgressPage />} />
         </Routes>
       </div>
     </>

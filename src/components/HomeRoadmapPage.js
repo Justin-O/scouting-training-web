@@ -1,12 +1,12 @@
 import React from 'react';
-import '../assets/css/modules.css';
+import '../assets/css/roadmap.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ModuleComponent from './ModuleComponent';
 import ModuleComponentInvert from './ModuleComponentInvert';
 
-function Modules() {
+function HomeRoadmapPage() {
     return (
-        <div className='component-padding modules-container'>
+        <div className='component-padding roadmap-container'>
             <ModuleComponent
                 title={"Spelvisie & spelaanbod"}
                 progress={100}
@@ -82,4 +82,4 @@ function Modules() {
     );
 };
 
-export default Modules;
+export default HomeRoadmapPage;

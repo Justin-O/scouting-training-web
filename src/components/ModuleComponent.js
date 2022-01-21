@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/modules.css';
+import '../assets/css/roadmap.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
 import { CircularProgressbarWithChildren, buildStyles  } from 'react-circular-progressbar';
@@ -13,7 +13,7 @@ function ModuleComponent(props) {
     let badgeLoader;
     let backgroundLoader;
 
-    if (progress === 100) {
+    if (progress >= 100) {
         badgeLoader = Badge
         backgroundLoader = '#4A007F'
     } else {
@@ -22,7 +22,7 @@ function ModuleComponent(props) {
     }
 
     
-    const  moduleColor = props.color;
+    const moduleColor = props.color;
     let moduleButtonStyle;
 
     if (moduleColor === "green") {
@@ -36,23 +36,23 @@ function ModuleComponent(props) {
             <div className='row g-0'>
                 <div className='col g-0'>
                     <div className='d-flex justify-content-end'>
-                        <Link to="/voortgang" className='link-d'>
+                        <Link to="module" className='link-d module-margin'>
                             <div className={moduleButtonStyle}>
                                 <div className='module-info d-flex justify-content-center align-items-center'>
-                                    <h4 className='title'>{props.title}</h4>
+                                    <h2 className='title'>{props.title}</h2>
                                 </div>
                                 <div className='progress-container d-flex justify-content-center align-items-center align-self-center'>
                                     <CircularProgressbarWithChildren
                                         value={progress}
                                         background={true}
-                                        strokeWidth={12}
+                                        strokeWidth={10}
                                         styles={buildStyles({
                                             pathColor: '#4A007F',
                                             trailColor: '#DBCCE5',
                                             backgroundColor: backgroundLoader,
                                         })}
                                     >
-                                        <img style={{ width: 100 }} src={badgeLoader} alt="badge" />
+                                        <img className='progress-icon module' src={badgeLoader} alt="badge" />
                                     </CircularProgressbarWithChildren>
                                 </div>
                             </div>
