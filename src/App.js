@@ -13,10 +13,11 @@ import ModulePage from './components/ModulePage';
 import WorkInProgressPage from './components/WorkInProgressPage';
 import ModuleSectionPage from './components/ModuleSectionPage';
 import AddMethodpage from './components/AddMethodpage';
+import NothingHere from './components/NothingHere';
 
 function App() {
   return (
-    <> 
+    <>
       <nav className="navigation navbar fixed-top navbar-expand navbar-dark">
         <div className="container my-3">
           <a href="/" className="navbar-brand">
@@ -29,8 +30,8 @@ function App() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/voortgang" className="nav-link">
-                Voortgang
+              <NavLink to="/vooruitgang" className="nav-link">
+                Vooruitgang
               </NavLink>
             </li>
             <li className="nav-item">
@@ -53,10 +54,11 @@ function App() {
           <Route path="module" element={<ModulePage />} />
           <Route path="modulesection" element={<ModuleSectionPage />} />
           <Route path="add-method" element={<AddMethodpage />} />
-          <Route path="voortgang" element={<ProgressPage />} />
+          <Route path="vooruitgang" element={<ProgressPage />} />
           <Route path="vrienden" element={<FriendsPage />} />
           <Route path="profiel" element={<ProfilePage />} />
           <Route path="wip" element={<WorkInProgressPage />} />
+          <Route path="*" element={<NothingHere />} />
         </Routes>
       </div>
     </>
